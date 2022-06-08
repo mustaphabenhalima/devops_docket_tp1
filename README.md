@@ -39,11 +39,11 @@ On utlise un environement python :
 
 ```docker
 FROM python:3.8-alpine
-RUN mkdir /app
-COPY . /app
-WORKDIR /app
+RUN mkdir /main
+COPY . /main
+WORKDIR /main
 RUN pip install -r requirements.txt
-CMD ["python", "app.py"]
+CMD ["python", "main.py"]
 ```
 
 ### Le fichier requirements.txt
@@ -79,7 +79,7 @@ docker run --env LAT="5.902785" --env LONG="102.754175" --env API_KEY=2ceb1995c8
 ### Taguer l’image
 
 ```shell
-docker tag myapp mustaben/firstimageapp
+docker tag firstimageapp mustaben/firstimageapp
 ```
 
 ### Publier l’image sur mon depository DockerHub
