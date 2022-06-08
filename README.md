@@ -66,7 +66,7 @@ docker build . -f docker.dockerfile -t  firstimageapp
 ### Execute
 
 ```shell
-docker run --env LAT="5.902785" --env LONG="102.754175" --env API_KEY=2ceb1995c8cc45dbdfd4e287128c7057 myapp
+docker run --env LAT="5.902785" --env LONG="102.754175" --env API_KEY=2ceb1995c8cc45dbdfd4e287128c7057 firstimageapp
 ```
 
 ### Résultat
